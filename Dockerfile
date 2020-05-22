@@ -1,6 +1,6 @@
 FROM rust:1.43.0 AS build
 
-ENV GLEAM_VERSION="32ce0787178253d7ad5407bc0aba53f8b873c578"
+ENV GLEAM_VERSION="08f4fc6e97b483c7c13b7ecb6e24ddb6ae5b407e"
 
 # RUN wget -c https://github.com/gleam-lang/gleam/releases/download/v0.8.0-rc1/gleam-v0.8.0-rc1-linux-amd64.tar.gz -O - | tar -xz -C /bin
 RUN set -xe \
