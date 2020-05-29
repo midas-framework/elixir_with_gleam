@@ -8,7 +8,6 @@ defmodule ElixirWithGleam.MixProject do
       elixir: "~> 1.10",
       erlc_paths: ["src", "gen"],
       compilers: [:gleam | Mix.compilers()],
-      aliases: ["compile.gleam": "cmd gleam build"],
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -24,7 +23,8 @@ defmodule ElixirWithGleam.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:gleam_stdlib, "~> 0.8.0"}
+      {:mix_gleam, "~> 0.1.0"},
+      {:gleam_stdlib, "~> 0.9.0"}
       # {:gleam_stdlib, path: "./stdlib"}
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]

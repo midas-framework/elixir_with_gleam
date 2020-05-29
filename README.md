@@ -10,7 +10,7 @@ Install gleam binary
 
 https://gleam.run/getting-started/installing-gleam.html
 
-Update `mix.exs` to compile `.gleam` files.
+Update `mix.exs` to compile `.gleam` files and include the Gleam standard library.
 
 ```elixir
 defmodule ElixirWithGleam.MixProject do
@@ -21,11 +21,18 @@ defmodule ElixirWithGleam.MixProject do
       # ...
       erlc_paths: ["src", "gen"],
       compilers: [:gleam | Mix.compilers()],
-      aliases: ["compile.gleam": "cmd gleam build"],
       # ...
     ]
   end
 
+  defp deps do
+    [
+      # ...
+      {:mix_gleam, "~> 0.1.0"},
+      {:gleam_stdlib, "~> 0.8.0"}
+      # ...
+    ]
+  end
   # ...
 end
 ```

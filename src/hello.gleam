@@ -5,5 +5,5 @@ pub fn hello() {
 }
 
 pub fn switch(greeting: String) -> String {
-    string.reverse(greeting)
+  string.reverse(greeting)
 }
