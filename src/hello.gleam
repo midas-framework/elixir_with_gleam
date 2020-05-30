@@ -1,6 +1,6 @@
 import gleam/string
 
-pub fn hello() {
+pub fn greeting() {
   "Hello, from gleam!"
 }
 

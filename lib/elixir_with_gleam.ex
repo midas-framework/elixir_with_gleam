@@ -3,16 +3,7 @@ defmodule ElixirWithGleam do
   Documentation for `ElixirWithGleam`.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ElixirWithGleam.hello()
-      :world
-
-  """
   def hello do
-    :world
+    :hello.switch(:hello.greeting())
   end
 end

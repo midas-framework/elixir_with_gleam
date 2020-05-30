@@ -3,6 +3,6 @@ defmodule ElixirWithGleamTest do
   doctest ElixirWithGleam
 
   test "greets the world" do
-    assert ElixirWithGleam.hello() == :world
+    assert ElixirWithGleam.hello() == "!maelg morf ,olleH"
   end
 end
