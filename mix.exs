@@ -24,7 +24,8 @@ defmodule ElixirWithGleam.MixProject do
   defp deps do
     [
       {:mix_gleam, "~> 0.1.0"},
-      {:gleam_stdlib, "~> 0.9.0"}
+      # {:gleam_stdlib, "~> 0.9.0"}
+      {:gleam_stdlib, github: "gleam-lang/stdlib"}
       # {:gleam_stdlib, path: "./stdlib"}
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
