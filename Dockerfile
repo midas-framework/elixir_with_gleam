@@ -12,3 +12,5 @@ RUN mix local.hex --force && mix local.rebar --force
 
 COPY . .
 RUN mix deps.get
+RUN mix compile
+# RUN mix test
