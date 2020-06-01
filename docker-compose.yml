@@ -5,5 +5,6 @@ services:
     build:
       context: "."
       dockerfile: "Dockerfile"
-    volumes:
-      - .:/opt/app
+    # Don't mount volumes, it includes written directories like gen/deps makes startup not reproducable
+    # volumes:
+    #   - .:/opt/app
